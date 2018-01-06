@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvThoroughfare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:textAlignment="center"
+            android:textSize="42sp" />
+
+        <TextView
+            android:id="@+id/tvWeather"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="9dp"
+            android:layout_marginEnd="9dp"
+            android:layout_marginStart="9dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/tvTempMin"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tvTempNow"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:textAlignment="center"
+                android:textSize="66sp" />
+
+            <TextView
+                android:id="@+id/tvTempMax"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvEvaluation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:includeFontPadding="false"
+            android:textAlignment="center"
+            android:textSize="21sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#BDBDBD" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:orientation="vertical">
+
+        <HorizontalScrollView
+            android:id="@+id/hScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#BDBDBD" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.65"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/vScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#BDBDBD" />
+    </LinearLayout>
+</LinearLayout>
